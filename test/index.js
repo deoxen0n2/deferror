@@ -28,7 +28,7 @@ test('1-level deep test', function (t) {
 })
 
 test('2-level deep test', function (t) {
-  t.plan(3)
+  t.plan(4)
 
   var errors = deferror([
     {
@@ -47,6 +47,8 @@ test('2-level deep test', function (t) {
   var transactionInvalidAmountError = new errors.TransactionError.InvalidAmountError(120, 100)
 
   t.ok(transactionInvalidAmountError instanceof Error, 'Instance of the defined error constructor should be instanceof Error')
+
+  t.ok(transactionInvalidAmountError instanceof errors.TransactionError.InvalidAmountError, 'Instance of the defined error constructor should be instanceof errors.TransactionError.InvalidAmountError')
 
   t.equal(transactionInvalidAmountError.message, 'The transaction could not be completed with the amount 120 USD specified. The amount exceeds your balance of 100 USD.', 'The error message of the instance of the defined error constructor should be formatted properly')
 
