@@ -1,0 +1,22 @@
+{
+  "name": "deferror",
+  "version": "0.1.0",
+  "description": "Define hierarchical custom error constructors with ease",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**/*.js | tap-notify | tap-diff"
+  },
+  "keywords": [
+    "hierarchical",
+    "custom",
+    "error",
+    "define",
+    "definition",
+    "constructor"
+  ],
+  "author": "Saran Siriphantnon",
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.6.0"
+  }
+}
