@@ -18,5 +18,6 @@
   "license": "MIT",
   "devDependencies": {
     "tape": "^4.6.0"
-  }
+  },
+  "repository": "https://github.com/deoxen0n2/deferror"
 }
